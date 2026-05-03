@@ -140,13 +140,13 @@ public sealed class TrayApplicationContext : ApplicationContext
         switch (state)
         {
             case MicrophoneMuteState.Muted:
-                SystemSounds.Exclamation.Play();
+                SystemSounds.Hand.Play(); // 沉稳音表示关闭
                 break;
             case MicrophoneMuteState.Unmuted:
-                SystemSounds.Asterisk.Play();
+                SystemSounds.Asterisk.Play(); // 清脆音表示开启
                 break;
             case MicrophoneMuteState.NoDevice:
-                SystemSounds.Hand.Play();
+                SystemSounds.Exclamation.Play(); // 警告音表示无设备
                 break;
         }
 
