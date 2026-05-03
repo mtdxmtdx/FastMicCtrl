@@ -1,0 +1,17 @@
+# .NET Build Artifacts
+[Bb]in/
+[Oo]bj/
+
+# IDE Settings
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Publish output
+Publish/
+
+# Local configuration
+settings.json
